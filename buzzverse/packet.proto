@@ -6,6 +6,6 @@ import "bme280.proto";
 
 message Packet {
     oneof data {
-        BME280Data bme280 = 3;
+        BME280Data bme280 = 1;
     }
 }
