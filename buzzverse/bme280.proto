@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package buzzverse.v1;
+
+import "nanopb.proto";
+
+message BME280Data {
+    uint32 temperature = 1;
+    uint32 pressure = 2;
+    uint32 humidity = 3;
+}

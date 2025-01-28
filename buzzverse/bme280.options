@@ -1,0 +1,3 @@
+*BME280Data.temperature int_size:IS_8
+*BME280Data.pressure int_size:IS_8
+*BME280Data.humidity int_size:IS_8

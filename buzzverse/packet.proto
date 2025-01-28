@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package buzzverse.v1;
+
+import "bme280.proto";
+
+message Packet {
+    oneof data {
+        BME280Data bme280 = 3;
+    }
+}
