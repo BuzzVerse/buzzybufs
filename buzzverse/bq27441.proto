@@ -9,5 +9,4 @@ message BQ27441Data {
     uint32 voltage_mv = 1;
     uint32 current_ma = 2;
     uint32 state_of_charge = 3;
-    uint32 remaining_capacity_mah = 4;
 }

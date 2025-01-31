@@ -6,7 +6,7 @@ option java_package = "dev.buzzverse.buzzcore";
 option java_outer_classname = "BuzzVerse_V1_BME280";
 
 message BME280Data {
-    uint32 temperature = 1;
-    uint32 pressure = 2;
+    sint32 temperature = 1;
+    sint32 pressure = 2;
     uint32 humidity = 3;
 }
