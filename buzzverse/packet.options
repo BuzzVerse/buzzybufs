@@ -1,0 +1,2 @@
+buzzverse.v1.DeviceStatus.components max_count:4
+buzzverse.v1.DeviceStatus.ComponentStatus.error_details max_size:32

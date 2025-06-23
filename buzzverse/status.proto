@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package buzzverse.v1;
+
+option java_package = "dev.buzzverse.buzzcore";
+option java_outer_classname = "BuzzVerse_V1_SystemStatus";
+
+message Status {
+
+    // Represents the operational state of a component.
+    enum ComponentState {
+        // The component is operating normally.
+        NORMAL = 0;
+        
+        // The state is unknown or not reported.
+        STATE_UNSPECIFIED = 1;
+        
+        // The component failed to initialize.
+        INITIALIZATION_FAILED = 2;
+        
+        // The component failed during operation.
+        OPERATION_FAILED = 3;
+        
+        // The component is disabled by configuration.
+        DISABLED = 4;
+    }
+
+    ComponentState bme280_status = 1;
+    ComponentState bq27441_status = 2;
+    ComponentState lorawan_status = 3;
+}

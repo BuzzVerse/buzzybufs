@@ -3,6 +3,7 @@ syntax = "proto3";
 package buzzverse.v1;
 
 import "buzzverse/bme280.proto";
+import "buzzverse/status.proto";
 
 option java_package = "dev.buzzverse.buzzcore";
 option java_outer_classname = "BuzzVerse_V1_Packet";
@@ -10,5 +11,6 @@ option java_outer_classname = "BuzzVerse_V1_Packet";
 message Packet {
     oneof data {
         BME280Data bme280 = 1;
+        Status status = 2;
     }
 }
