@@ -3,5 +3,5 @@ syntax = "proto3";
 package buzzverse.v1;
 
 message SEN0308Data {
-  float percent = 1;
+  uint32 percent = 1;
 }
