@@ -28,4 +28,5 @@ message Status {
     ComponentState bme280_status = 1;
     ComponentState bq27441_status = 2;
     ComponentState lorawan_status = 3;
+    ComponentState sen0308_status = 4;
 }
