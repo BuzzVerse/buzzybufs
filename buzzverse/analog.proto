@@ -2,6 +2,6 @@ syntax = "proto3";
 
 package buzzverse.v1;
 
-message SEN0308Data {
-  uint32 percent = 1;
+message Analog {
+  uint32 millivolts = 1;
 }

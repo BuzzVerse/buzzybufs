@@ -3,7 +3,7 @@ syntax = "proto3";
 package buzzverse.v1;
 
 import "buzzverse/bme280.proto";
-import "buzzverse/sen0308.proto";
+import "buzzverse/analog.proto";
 import "buzzverse/status.proto";
 import "buzzverse/bq27441.proto";
 
@@ -15,6 +15,6 @@ message Packet {
         BME280Data bme280 = 1;
         Status status = 2;
         BQ27441Data bq27441 = 3;
-        SEN0308Data sen0308 = 4;
+        Analog analog = 4;
     }
 }
