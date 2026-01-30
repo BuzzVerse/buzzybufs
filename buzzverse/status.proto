@@ -29,4 +29,5 @@ message Status {
     ComponentState bq27441_status = 2;
     ComponentState lorawan_status = 3;
     ComponentState analog_status = 4;
+    ComponentState motion_status = 5;
 }

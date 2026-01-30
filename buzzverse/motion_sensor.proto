@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package buzzverse.v1;
+
+option java_package = "dev.buzzverse.buzzcore";
+option java_outer_classname = "BuzzVerse_V1_MotionSensor";
+
+message MotionSensorData {
+    bool motion_detected = 1;
+}
