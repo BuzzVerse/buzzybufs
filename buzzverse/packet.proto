@@ -6,6 +6,7 @@ import "buzzverse/bme280.proto";
 import "buzzverse/analog.proto";
 import "buzzverse/status.proto";
 import "buzzverse/bq27441.proto";
+import "buzzverse/counter.proto";
 
 option java_package = "dev.buzzverse.buzzcore";
 option java_outer_classname = "BuzzVerse_V1_Packet";
@@ -16,5 +17,6 @@ message Packet {
         Status status = 2;
         BQ27441Data bq27441 = 3;
         Analog analog = 4;
+        Counter counter = 5;
     }
 }
