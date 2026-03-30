@@ -6,5 +6,10 @@ option java_package = "dev.buzzverse.buzzcore";
 option java_outer_classname = "BuzzVerse_V1_Analog";
 
 message Analog {
+  enum SensorType {
+    SOIL_MOISTURE = 0;
+    DUST_SENSOR = 1;
+  }
   uint32 millivolts = 1;
+  SensorType type = 2;
 }
